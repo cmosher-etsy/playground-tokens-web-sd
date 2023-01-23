@@ -1,0 +1,33 @@
+.pg-input {
+  margin: unset;
+  outline: unset;
+  display: block;
+  position: relative;
+  border: solid 2px black;
+  background-color: white;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: min(1rem, 6px);
+  padding: calc(1rem / 2);
+  line-height: 1rem;
+  color: black;
+
+  &:hover {
+    cursor: text;
+  }
+
+  &:read-only,
+  &--readonly {
+    background-color: rgb(198, 198, 198);
+    color: black;
+
+    &:hover {
+      cursor: not-allowed;
+    }
+  }
+
+  &--invalid {
+    background-color: rgb(251, 207, 207);
+    border: solid 2px rgb(121, 2, 2);
+  }
+}

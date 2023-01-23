@@ -1,0 +1,55 @@
+.pg-mw-content {
+  max-width: 1000px;
+}
+
+.pg-tabbable {
+  &:focus-visible {
+    box-shadow: 0 0 0 2px white, 0 0 0 4px blue;
+  }
+}
+
+.pg-title-text-1 {
+  font-size: 3rem;
+}
+
+.pg-body-text-1 {
+  font-size: 1rem;
+}
+
+.pg-fixed {
+  position: fixed;
+}
+
+.pg-shadow {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.65);
+}
+
+@for $multiplier from 0 through 10 {
+  .pg-m-#{$multiplier} {
+    margin: $multiplier * 0.25rem;
+  }
+  .pg-ml-#{$multiplier} {
+    margin-left: $multiplier * 0.25rem;
+  }
+  .pg-mt-#{$multiplier} {
+    margin-top: $multiplier * 0.25rem;
+  }
+  .pg-mr-#{$multiplier} {
+    margin-right: $multiplier * 0.25rem;
+  }
+  .pg-mb-#{$multiplier} {
+    margin-bottom: $multiplier * 0.25rem;
+  }
+  .pg-left-#{$multiplier} {
+    left: $multiplier * 0.25rem;
+  }
+  .pg-top-#{$multiplier} {
+    top: $multiplier * 0.25rem;
+  }
+  .pg-right-#{$multiplier} {
+    right: $multiplier * 0.25rem;
+  }
+  .pg-bottom-#{$multiplier} {
+    bottom: $multiplier * 0.25rem;
+  }
+}

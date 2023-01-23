@@ -1,0 +1,22 @@
+.pg-admonition {
+  display: block;
+  border-radius: 0.5rem;
+  background-color: rgb(153, 210, 207);
+  color: rgb(0, 0, 0);
+  padding: 2rem;
+
+  &--error {
+    background-color: rgb(121, 2, 2);
+    color: white;
+  }
+
+  &--celebrate {
+    background-color: rgb(77, 144, 238);
+    color: rgb(255, 255, 255);
+  }
+
+  &--caution {
+    background-color: rgb(244, 242, 174);
+    color: rgb(0, 0, 0);
+  }
+}
