@@ -1,11 +1,13 @@
+@import "playground-styles-sd/dist/scss/_variables.scss";
+
 .pg-button {
   margin: unset;
   outline: unset;
   display: flex;
   position: relative;
   border-radius: calc(1rem * 1.5);
-  background-color: rgb(234, 100, 51);
-  color: white;
+  background-color: $color-surface-action-primary-bg;
+  color: $color-surface-action-primary-fg;
   padding: 1rem;
   font-size: 1rem;
   line-height: 1rem;
@@ -15,23 +17,19 @@
   }
 
   &--busy {
-    background-color: rgb(198, 198, 198);
-    color: black;
+    background-color: $color-surface-action-primary-disabled-bg;
+    color: $color-surface-action-primary-disabled-fg;
 
-    &:hover,
-    &:focus {
+    &:hover {
       cursor: not-allowed;
     }
   }
 
   &:not(.pg-button--busy) {
     &:hover,
-    &:focus {
-      background-color: coral;
-    }
-
-    &:active {
-      background-color: rgb(236, 66, 4);
+    &:focus-visible {
+      background-color: $color-surface-action-primary-hover-bg;
+      color: $color-surface-action-primary-hover-fg;
     }
   }
 }

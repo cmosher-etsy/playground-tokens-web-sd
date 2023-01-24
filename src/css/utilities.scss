@@ -1,19 +1,32 @@
+@import "playground-styles-sd/dist/scss/_variables.scss";
+
 .pg-mw-content {
   max-width: 1000px;
 }
 
 .pg-tabbable {
   &:focus-visible {
-    box-shadow: 0 0 0 2px white, 0 0 0 4px blue;
+    box-shadow: 0 0 0 $effect-outline-focus-buffer-width
+        $effect-outline-focus-buffer-color,
+      0 0 0 calc($effect-outline-focus-width + $effect-outline-focus-width)
+        $effect-outline-focus-color;
   }
 }
 
-.pg-title-text-1 {
-  font-size: 3rem;
+.pg-text-heading {
+  font-family: $text-heading-family;
+  font-size: $text-heading-size;
+  font-weight: $text-heading-weight;
+  letter-spacing: $text-heading-letter-spacing;
+  line-height: $text-heading-line-height;
 }
 
-.pg-body-text-1 {
-  font-size: 1rem;
+.pg-text-body {
+  font-family: $text-body-family;
+  font-size: $text-body-size;
+  font-weight: $text-body-weight;
+  letter-spacing: $text-body-letter-spacing;
+  line-height: $text-body-line-height;
 }
 
 .pg-fixed {
@@ -21,7 +34,9 @@
 }
 
 .pg-shadow {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.65);
+  box-shadow: $effect-shadow-100-x-offset $effect-shadow-100-y-offset
+    $effect-shadow-100-border-radius $effect-shadow-100-spread
+    $effect-shadow-100-color;
 }
 
 @for $multiplier from 0 through 10 {

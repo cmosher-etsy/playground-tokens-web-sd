@@ -4,7 +4,7 @@ import classnames from "classnames";
 export interface PgAdmonitionProps {
     class?: string;
     children?: JSX.Element;
-    styleType?: "celebrate" | "info" | "caution" | "error",
+    styleType?: "success" | "info" | "warning" | "critical",
 };
 
 export const PgAdmonition: Component<PgAdmonitionProps> = ({
@@ -13,10 +13,10 @@ export const PgAdmonition: Component<PgAdmonitionProps> = ({
     ...passthroughProps
 }) => {
     const computedClasses = classnames(["pg-admonition", passthroughProps.class], {
-        "pg-admonition--celebrate": styleType === "celebrate",
+        "pg-admonition--success": styleType === "success",
         "pg-admonition--info": styleType === "info",
-        "pg-admonition--caution": styleType === "caution",
-        "pg-admonition--error": styleType === "error",
+        "pg-admonition--warning": styleType === "warning",
+        "pg-admonition--critical": styleType === "critical",
     });
 
     return <div class={computedClasses}>{children}</div>;

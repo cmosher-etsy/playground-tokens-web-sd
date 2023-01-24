@@ -1,22 +1,25 @@
+@import "playground-styles-sd/dist/scss/_variables.scss";
+
 .pg-admonition {
   display: block;
   border-radius: 0.5rem;
-  background-color: rgb(153, 210, 207);
-  color: rgb(0, 0, 0);
   padding: 2rem;
 
-  &--error {
-    background-color: rgb(121, 2, 2);
-    color: white;
+  background-color: $color-surface-informational-bg;
+  color: $color-surface-informational-fg;
+
+  &--critical {
+    background-color: $color-surface-critical-bg;
+    color: $color-surface-critical-fg;
   }
 
-  &--celebrate {
-    background-color: rgb(77, 144, 238);
-    color: rgb(255, 255, 255);
+  &--success {
+    background-color: $color-surface-success-bg;
+    color: $color-surface-success-fg;
   }
 
-  &--caution {
-    background-color: rgb(244, 242, 174);
-    color: rgb(0, 0, 0);
+  &--warning {
+    background-color: $color-surface-warning-bg;
+    color: $color-surface-warning-fg;
   }
 }
