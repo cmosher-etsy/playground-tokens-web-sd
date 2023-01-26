@@ -22,7 +22,7 @@ export const PgButton: Component<PgButtonProps> = ({
         "pg-button--busy": busy,
     });
 
-    return (<button class={computedClasses}>
+    return (<button class={computedClasses} {...(busy ? { "aria-disabled": "true"} : {})}>
         {children}
     </button>);
 };
