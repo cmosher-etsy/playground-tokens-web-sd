@@ -1,0 +1,7 @@
+@import "playground-styles-sd/dist/scss/_variables.scss";
+@import "playground-styles-sd/dist/scss/_variables-dark.scss";
+
+html {
+  background-color: $color-surface-bg;
+  color: $color-surface-fg;
+}
