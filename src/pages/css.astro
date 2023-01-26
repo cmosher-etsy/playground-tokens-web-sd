@@ -1,7 +1,10 @@
 ---
-import "../css/normalize.scss";
-import "../css/components.scss";
-import "../css/utilities.scss";
+import "playground-styles-sd/dist/css/variables.css";
+import "playground-styles-sd/dist/css/variables-dark.css";
+import "../css/normalize-css.scss";
+import "../css/components-css.scss";
+import "../css/tailwind.css";
+import "../css/utilities-css.scss";
 import { PgAdmonition } from "../components/PgAdmonition.js";
 import { PgButton } from "../components/PgButton.js";
 import { PgInput } from "../components/PgInput.js";
@@ -52,8 +55,3 @@ import { PgInput } from "../components/PgInput.js";
     <PgAdmonition class="pg-fixed pg-right-6 pg-bottom-6 pg-shadow" styleType="success">Success submitting your form!</PgAdmonition>
   </body>
 </html>
-
-<style is:global>
-  @tailwind base;
-  @tailwind utilities;
-</style>

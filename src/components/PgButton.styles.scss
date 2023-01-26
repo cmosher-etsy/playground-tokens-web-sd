@@ -5,15 +5,31 @@
   outline: unset;
   display: flex;
   position: relative;
-  border-radius: calc(1rem * 1.5);
+  justify-content: center;
+  align-items: center;
+
+  border-radius: $shape-button-border-radius-base;
+  padding: $space-system-100 $shape-button-border-radius-base;
+
+  min-height: $shape-button-min-height-base;
+
+  font-family: $text-body-family;
+  font-size: $text-body-size;
+  font-weight: $text-body-weight;
+  letter-spacing: $text-body-letter-spacing;
+  line-height: $text-body-line-height;
+
   background-color: $color-surface-action-primary-bg;
   color: $color-surface-action-primary-fg;
-  padding: 1rem;
-  font-size: 1rem;
-  line-height: 1rem;
 
   &:hover {
     cursor: pointer;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-surface-action-primary-hover-bg;
+    color: $color-surface-action-primary-hover-fg;
   }
 
   &--busy {
@@ -23,13 +39,11 @@
     &:hover {
       cursor: not-allowed;
     }
-  }
 
-  &:not(.pg-button--busy) {
     &:hover,
-    &:focus-visible {
-      background-color: $color-surface-action-primary-hover-bg;
-      color: $color-surface-action-primary-hover-fg;
+    &:focus {
+      background-color: $color-surface-action-primary-disabled-hover-bg;
+      color: $color-surface-action-primary-disabled-hover-fg;
     }
   }
 }

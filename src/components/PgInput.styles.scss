@@ -5,31 +5,62 @@
   outline: unset;
   display: block;
   position: relative;
-  border: solid 2px black;
-  background-color: white;
   width: 100%;
   box-sizing: border-box;
-  border-radius: min(1rem, 6px);
-  padding: calc(1rem / 2);
-  line-height: 1rem;
-  color: black;
+  padding: #{$space-system-100 * 1.5} #{$space-system-100 * 2};
+
+  font-family: $text-body-family;
+  font-size: $text-body-size;
+  font-weight: $text-body-weight;
+  letter-spacing: $text-body-letter-spacing;
+  line-height: $text-body-line-height;
+
+  background-color: $color-surface-input-bg;
+  color: $color-surface-input-fg;
+  border: solid $shape-input-border-width $color-surface-input-border;
+  border-radius: $shape-input-border-radius-base;
 
   &:hover {
     cursor: text;
   }
 
+  &:hover,
+  &:focus {
+    background-color: $color-surface-input-hover-bg;
+    color: $color-surface-input-hover-fg;
+    border-color: $color-surface-input-hover-border;
+  }
+
+  &--invalid {
+    background-color: $color-surface-input-invalid-bg;
+    color: $color-surface-input-invalid-fg;
+    border-color: $color-surface-input-invalid-border;
+
+    &:hover,
+    &:focus {
+      background-color: $color-surface-input-invalid-hover-bg;
+      color: $color-surface-input-invalid-hover-fg;
+      border-color: $color-surface-input-invalid-hover-border;
+    }
+  }
+
+  &:disabled,
+  &--disabled,
   &:read-only,
   &--readonly {
-    background-color: rgb(198, 198, 198);
-    color: black;
+    background-color: $color-surface-input-disabled-bg;
+    color: $color-surface-input-disabled-fg;
+    border-color: $color-surface-input-disabled-border;
 
     &:hover {
       cursor: not-allowed;
     }
-  }
 
-  &--invalid {
-    background-color: rgb(251, 207, 207);
-    border: solid 2px rgb(121, 2, 2);
+    &:hover,
+    &:focus {
+      background-color: $color-surface-input-disabled-hover-bg;
+      color: $color-surface-input-disabled-hover-fg;
+      border-color: $color-surface-input-disabled-hover-border;
+    }
   }
 }

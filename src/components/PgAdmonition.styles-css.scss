@@ -1,0 +1,23 @@
+.pg-admonition {
+  display: block;
+  border-radius: 0.5rem;
+  padding: 2rem;
+
+  background-color: var(--color-surface-informational-bg);
+  color: var(--color-surface-informational-fg);
+
+  &--critical {
+    background-color: var(--color-surface-critical-bg);
+    color: var(--color-surface-critical-fg);
+  }
+
+  &--success {
+    background-color: var(--color-surface-success-bg);
+    color: var(--color-surface-success-fg);
+  }
+
+  &--warning {
+    background-color: var(--color-surface-warning-bg);
+    color: var(--color-surface-warning-fg);
+  }
+}

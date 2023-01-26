@@ -1,0 +1,47 @@
+.pg-button {
+  margin: unset;
+  outline: unset;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: var(--shape-button-border-radius-base);
+  padding: var(--space-system-100) var(--shape-button-border-radius-base);
+
+  min-height: var(--shape-button-min-height-base);
+
+  font-family: var(--text-body-family);
+  font-size: var(--text-body-size);
+  font-weight: var(--text-body-weight);
+  letter-spacing: var(--text-body-letter-spacing);
+  line-height: var(--text-body-line-height);
+
+  background-color: var(--color-surface-action-primary-bg);
+  color: var(--color-surface-action-primary-fg);
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-surface-action-primary-hover-bg);
+    color: var(--color-surface-action-primary-hover-fg);
+  }
+
+  &--busy {
+    background-color: var(--color-surface-action-primary-disabled-bg);
+    color: var(--color-surface-action-primary-disabled-fg);
+
+    &:hover {
+      cursor: not-allowed;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: var(--color-surface-action-primary-disabled-hover-bg);
+      color: var(--color-surface-action-primary-disabled-hover-fg);
+    }
+  }
+}

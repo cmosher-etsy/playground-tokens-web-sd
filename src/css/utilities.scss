@@ -34,37 +34,37 @@
 }
 
 .pg-shadow {
-  box-shadow: $effect-shadow-100-x-offset $effect-shadow-100-y-offset
+  box-shadow: $effect-shadow-100-x $effect-shadow-100-y
     $effect-shadow-100-border-radius $effect-shadow-100-spread
     $effect-shadow-100-color;
 }
 
 @for $multiplier from 0 through 10 {
   .pg-m-#{$multiplier} {
-    margin: $multiplier * 0.25rem;
+    margin: $multiplier * $space-system-100;
   }
   .pg-ml-#{$multiplier} {
-    margin-left: $multiplier * 0.25rem;
+    margin-left: $multiplier * $space-system-100;
   }
   .pg-mt-#{$multiplier} {
-    margin-top: $multiplier * 0.25rem;
+    margin-top: $multiplier * $space-system-100;
   }
   .pg-mr-#{$multiplier} {
-    margin-right: $multiplier * 0.25rem;
+    margin-right: $multiplier * $space-system-100;
   }
   .pg-mb-#{$multiplier} {
-    margin-bottom: $multiplier * 0.25rem;
+    margin-bottom: $multiplier * $space-system-100;
   }
   .pg-left-#{$multiplier} {
-    left: $multiplier * 0.25rem;
+    left: $multiplier * $space-system-100;
   }
   .pg-top-#{$multiplier} {
-    top: $multiplier * 0.25rem;
+    top: $multiplier * $space-system-100;
   }
   .pg-right-#{$multiplier} {
-    right: $multiplier * 0.25rem;
+    right: $multiplier * $space-system-100;
   }
   .pg-bottom-#{$multiplier} {
-    bottom: $multiplier * 0.25rem;
+    bottom: $multiplier * $space-system-100;
   }
 }
