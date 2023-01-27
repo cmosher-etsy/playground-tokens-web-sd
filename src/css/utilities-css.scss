@@ -15,7 +15,8 @@
 }
 
 .pg-text-heading {
-  font-family: var(--text-heading-family);
+  font-family: var(--text-heading-family), var(--text-heading-family-fallback-1),
+    var(--text-heading-family-fallback-2);
   font-size: var(--text-heading-size);
   font-weight: var(--text-heading-weight);
   letter-spacing: var(--text-heading-letter-spacing);
@@ -23,7 +24,8 @@
 }
 
 .pg-text-body {
-  font-family: var(--text-body-family);
+  font-family: var(--text-body-family), var(--text-body-family-fallback-1),
+    var(--text-body-family-fallback-2);
   font-size: var(--text-body-size);
   font-weight: var(--text-body-weight);
   letter-spacing: var(--text-body-letter-spacing);

@@ -1,0 +1,72 @@
+@import "playground-styles-sd/dist/web/_variables.scss";
+
+.pg-mw-content {
+  max-width: 1000px;
+}
+
+.pg-tabbable {
+  &:focus-visible {
+    box-shadow: 0 0 0 $effect-outline-focus-buffer-width
+        $effect-outline-focus-buffer-color,
+      0 0 0 calc($effect-outline-focus-width + $effect-outline-focus-width)
+        $effect-outline-focus-color;
+  }
+}
+
+.pg-text-heading {
+  font-family: $text-heading-family, $text-heading-family-fallback-1,
+    $text-heading-family-fallback-2;
+  font-size: $text-heading-size;
+  font-weight: $text-heading-weight;
+  letter-spacing: $text-heading-letter-spacing;
+  line-height: $text-heading-line-height;
+}
+
+.pg-text-body {
+  font-family: $text-body-family, $text-body-family-fallback-1,
+    $text-body-family-fallback-2;
+  font-size: $text-body-size;
+  font-weight: $text-body-weight;
+  letter-spacing: $text-body-letter-spacing;
+  line-height: $text-body-line-height;
+}
+
+.pg-fixed {
+  position: fixed;
+}
+
+.pg-shadow {
+  box-shadow: $effect-shadow-100-x $effect-shadow-100-y
+    $effect-shadow-100-border-radius $effect-shadow-100-spread
+    $effect-shadow-100-color;
+}
+
+@for $multiplier from 0 through 10 {
+  .pg-m-#{$multiplier} {
+    margin: $multiplier * $space-system-100;
+  }
+  .pg-ml-#{$multiplier} {
+    margin-left: $multiplier * $space-system-100;
+  }
+  .pg-mt-#{$multiplier} {
+    margin-top: $multiplier * $space-system-100;
+  }
+  .pg-mr-#{$multiplier} {
+    margin-right: $multiplier * $space-system-100;
+  }
+  .pg-mb-#{$multiplier} {
+    margin-bottom: $multiplier * $space-system-100;
+  }
+  .pg-left-#{$multiplier} {
+    left: $multiplier * $space-system-100;
+  }
+  .pg-top-#{$multiplier} {
+    top: $multiplier * $space-system-100;
+  }
+  .pg-right-#{$multiplier} {
+    right: $multiplier * $space-system-100;
+  }
+  .pg-bottom-#{$multiplier} {
+    bottom: $multiplier * $space-system-100;
+  }
+}
