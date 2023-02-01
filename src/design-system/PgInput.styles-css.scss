@@ -5,8 +5,8 @@
   position: relative;
   width: 100%;
   box-sizing: border-box;
-  padding: calc(var(--sizing-system-base-unit) * 1.5)
-    calc(var(--sizing-system-base-unit) * 2);
+  padding: calc(var(--sizing-palette-base-unit) * 1.5)
+    calc(var(--sizing-palette-base-unit) * 2);
 
   font-family: var(--font-body-family);
   font-size: var(--font-body-size);

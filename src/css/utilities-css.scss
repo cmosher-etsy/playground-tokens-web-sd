@@ -44,38 +44,38 @@
 
 @for $multiplier from 0 through 10 {
   .pg-m-#{$multiplier} {
-    margin: calc($multiplier * var(--sizing-system-base-unit));
+    margin: calc($multiplier * var(--sizing-palette-base-unit));
   }
 
   .pg-ml-#{$multiplier} {
-    margin-left: calc($multiplier * var(--sizing-system-base-unit));
+    margin-left: calc($multiplier * var(--sizing-palette-base-unit));
   }
 
   .pg-mt-#{$multiplier} {
-    margin-top: calc($multiplier * var(--sizing-system-base-unit));
+    margin-top: calc($multiplier * var(--sizing-palette-base-unit));
   }
 
   .pg-mr-#{$multiplier} {
-    margin-right: calc($multiplier * var(--sizing-system-base-unit));
+    margin-right: calc($multiplier * var(--sizing-palette-base-unit));
   }
 
   .pg-mb-#{$multiplier} {
-    margin-bottom: calc($multiplier * var(--sizing-system-base-unit));
+    margin-bottom: calc($multiplier * var(--sizing-palette-base-unit));
   }
 
   .pg-left-#{$multiplier} {
-    left: calc($multiplier * var(--sizing-system-base-unit));
+    left: calc($multiplier * var(--sizing-palette-base-unit));
   }
 
   .pg-top-#{$multiplier} {
-    top: calc($multiplier * var(--sizing-system-base-unit));
+    top: calc($multiplier * var(--sizing-palette-base-unit));
   }
 
   .pg-right-#{$multiplier} {
-    right: calc($multiplier * var(--sizing-system-base-unit));
+    right: calc($multiplier * var(--sizing-palette-base-unit));
   }
 
   .pg-bottom-#{$multiplier} {
-    bottom: calc($multiplier * var(--sizing-system-base-unit));
+    bottom: calc($multiplier * var(--sizing-palette-base-unit));
   }
 }

@@ -5,7 +5,7 @@
   position: relative;
   width: 100%;
   box-sizing: border-box;
-  padding: #{$sizing-system-base-unit * 1.5} #{$sizing-system-base-unit * 2};
+  padding: #{$sizing-palette-base-unit * 1.5} #{$sizing-palette-base-unit * 2};
 
   font-family: $font-body-family;
   font-size: $font-body-size;

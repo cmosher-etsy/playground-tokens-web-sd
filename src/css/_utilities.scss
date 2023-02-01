@@ -43,30 +43,30 @@
 
 @for $multiplier from 0 through 10 {
   .pg-m-#{$multiplier} {
-    margin: $multiplier * $sizing-system-base-unit;
+    margin: $multiplier * $sizing-palette-base-unit;
   }
   .pg-ml-#{$multiplier} {
-    margin-left: $multiplier * $sizing-system-base-unit;
+    margin-left: $multiplier * $sizing-palette-base-unit;
   }
   .pg-mt-#{$multiplier} {
-    margin-top: $multiplier * $sizing-system-base-unit;
+    margin-top: $multiplier * $sizing-palette-base-unit;
   }
   .pg-mr-#{$multiplier} {
-    margin-right: $multiplier * $sizing-system-base-unit;
+    margin-right: $multiplier * $sizing-palette-base-unit;
   }
   .pg-mb-#{$multiplier} {
-    margin-bottom: $multiplier * $sizing-system-base-unit;
+    margin-bottom: $multiplier * $sizing-palette-base-unit;
   }
   .pg-left-#{$multiplier} {
-    left: $multiplier * $sizing-system-base-unit;
+    left: $multiplier * $sizing-palette-base-unit;
   }
   .pg-top-#{$multiplier} {
-    top: $multiplier * $sizing-system-base-unit;
+    top: $multiplier * $sizing-palette-base-unit;
   }
   .pg-right-#{$multiplier} {
-    right: $multiplier * $sizing-system-base-unit;
+    right: $multiplier * $sizing-palette-base-unit;
   }
   .pg-bottom-#{$multiplier} {
-    bottom: $multiplier * $sizing-system-base-unit;
+    bottom: $multiplier * $sizing-palette-base-unit;
   }
 }
