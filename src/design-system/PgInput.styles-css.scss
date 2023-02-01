@@ -5,13 +5,14 @@
   position: relative;
   width: 100%;
   box-sizing: border-box;
-  padding: calc(var(--space-system-100) * 1.5) calc(var(--space-system-100) * 2);
+  padding: calc(var(--sizing-system-base-unit) * 1.5)
+    calc(var(--sizing-system-base-unit) * 2);
 
-  font-family: var(--text-body-family);
-  font-size: var(--text-body-size);
-  font-weight: var(--text-body-weight);
-  letter-spacing: var(--text-body-letter-spacing);
-  line-height: var(--text-body-line-height);
+  font-family: var(--font-body-family);
+  font-size: var(--font-body-size);
+  font-weight: var(--font-body-weight);
+  letter-spacing: var(--font-body-letter-spacing);
+  line-height: var(--font-body-line-height);
 
   background-color: var(--color-surface-input-bg);
   color: var(--color-surface-input-fg);

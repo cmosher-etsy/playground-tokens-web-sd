@@ -5,13 +5,13 @@
   position: relative;
   width: 100%;
   box-sizing: border-box;
-  padding: #{$space-system-100 * 1.5} #{$space-system-100 * 2};
+  padding: #{$sizing-system-base-unit * 1.5} #{$sizing-system-base-unit * 2};
 
-  font-family: $text-body-family;
-  font-size: $text-body-size;
-  font-weight: $text-body-weight;
-  letter-spacing: $text-body-letter-spacing;
-  line-height: $text-body-line-height;
+  font-family: $font-body-family;
+  font-size: $font-body-size;
+  font-weight: $font-body-weight;
+  letter-spacing: $font-body-letter-spacing;
+  line-height: $font-body-line-height;
 
   background-color: $color-surface-input-bg;
   color: $color-surface-input-fg;

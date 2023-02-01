@@ -15,21 +15,21 @@
 }
 
 .pg-text-heading {
-  font-family: var(--text-heading-family), var(--text-heading-family-fallback-1),
-    var(--text-heading-family-fallback-2);
-  font-size: var(--text-heading-size);
-  font-weight: var(--text-heading-weight);
-  letter-spacing: var(--text-heading-letter-spacing);
-  line-height: var(--text-heading-line-height);
+  font-family: var(--font-heading-family), var(--font-heading-family-fallback-1),
+    var(--font-heading-family-fallback-2);
+  font-size: var(--font-heading-size);
+  font-weight: var(--font-heading-weight);
+  letter-spacing: var(--font-heading-letter-spacing);
+  line-height: var(--font-heading-line-height);
 }
 
 .pg-text-body {
-  font-family: var(--text-body-family), var(--text-body-family-fallback-1),
-    var(--text-body-family-fallback-2);
-  font-size: var(--text-body-size);
-  font-weight: var(--text-body-weight);
-  letter-spacing: var(--text-body-letter-spacing);
-  line-height: var(--text-body-line-height);
+  font-family: var(--font-body-family), var(--font-body-family-fallback-1),
+    var(--font-body-family-fallback-2);
+  font-size: var(--font-body-size);
+  font-weight: var(--font-body-weight);
+  letter-spacing: var(--font-body-letter-spacing);
+  line-height: var(--font-body-line-height);
 }
 
 .pg-fixed {
@@ -44,38 +44,38 @@
 
 @for $multiplier from 0 through 10 {
   .pg-m-#{$multiplier} {
-    margin: calc($multiplier * var(--space-system-100));
+    margin: calc($multiplier * var(--sizing-system-base-unit));
   }
 
   .pg-ml-#{$multiplier} {
-    margin-left: calc($multiplier * var(--space-system-100));
+    margin-left: calc($multiplier * var(--sizing-system-base-unit));
   }
 
   .pg-mt-#{$multiplier} {
-    margin-top: calc($multiplier * var(--space-system-100));
+    margin-top: calc($multiplier * var(--sizing-system-base-unit));
   }
 
   .pg-mr-#{$multiplier} {
-    margin-right: calc($multiplier * var(--space-system-100));
+    margin-right: calc($multiplier * var(--sizing-system-base-unit));
   }
 
   .pg-mb-#{$multiplier} {
-    margin-bottom: calc($multiplier * var(--space-system-100));
+    margin-bottom: calc($multiplier * var(--sizing-system-base-unit));
   }
 
   .pg-left-#{$multiplier} {
-    left: calc($multiplier * var(--space-system-100));
+    left: calc($multiplier * var(--sizing-system-base-unit));
   }
 
   .pg-top-#{$multiplier} {
-    top: calc($multiplier * var(--space-system-100));
+    top: calc($multiplier * var(--sizing-system-base-unit));
   }
 
   .pg-right-#{$multiplier} {
-    right: calc($multiplier * var(--space-system-100));
+    right: calc($multiplier * var(--sizing-system-base-unit));
   }
 
   .pg-bottom-#{$multiplier} {
-    bottom: calc($multiplier * var(--space-system-100));
+    bottom: calc($multiplier * var(--sizing-system-base-unit));
   }
 }

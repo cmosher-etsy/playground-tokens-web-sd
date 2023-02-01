@@ -14,21 +14,21 @@
 }
 
 .pg-text-heading {
-  font-family: $text-heading-family, $text-heading-family-fallback-1,
-    $text-heading-family-fallback-2;
-  font-size: $text-heading-size;
-  font-weight: $text-heading-weight;
-  letter-spacing: $text-heading-letter-spacing;
-  line-height: $text-heading-line-height;
+  font-family: $font-heading-family, $font-heading-family-fallback-1,
+    $font-heading-family-fallback-2;
+  font-size: $font-heading-size;
+  font-weight: $font-heading-weight;
+  letter-spacing: $font-heading-letter-spacing;
+  line-height: $font-heading-line-height;
 }
 
 .pg-text-body {
-  font-family: $text-body-family, $text-body-family-fallback-1,
-    $text-body-family-fallback-2;
-  font-size: $text-body-size;
-  font-weight: $text-body-weight;
-  letter-spacing: $text-body-letter-spacing;
-  line-height: $text-body-line-height;
+  font-family: $font-body-family, $font-body-family-fallback-1,
+    $font-body-family-fallback-2;
+  font-size: $font-body-size;
+  font-weight: $font-body-weight;
+  letter-spacing: $font-body-letter-spacing;
+  line-height: $font-body-line-height;
 }
 
 .pg-fixed {
@@ -43,30 +43,30 @@
 
 @for $multiplier from 0 through 10 {
   .pg-m-#{$multiplier} {
-    margin: $multiplier * $space-system-100;
+    margin: $multiplier * $sizing-system-base-unit;
   }
   .pg-ml-#{$multiplier} {
-    margin-left: $multiplier * $space-system-100;
+    margin-left: $multiplier * $sizing-system-base-unit;
   }
   .pg-mt-#{$multiplier} {
-    margin-top: $multiplier * $space-system-100;
+    margin-top: $multiplier * $sizing-system-base-unit;
   }
   .pg-mr-#{$multiplier} {
-    margin-right: $multiplier * $space-system-100;
+    margin-right: $multiplier * $sizing-system-base-unit;
   }
   .pg-mb-#{$multiplier} {
-    margin-bottom: $multiplier * $space-system-100;
+    margin-bottom: $multiplier * $sizing-system-base-unit;
   }
   .pg-left-#{$multiplier} {
-    left: $multiplier * $space-system-100;
+    left: $multiplier * $sizing-system-base-unit;
   }
   .pg-top-#{$multiplier} {
-    top: $multiplier * $space-system-100;
+    top: $multiplier * $sizing-system-base-unit;
   }
   .pg-right-#{$multiplier} {
-    right: $multiplier * $space-system-100;
+    right: $multiplier * $sizing-system-base-unit;
   }
   .pg-bottom-#{$multiplier} {
-    bottom: $multiplier * $space-system-100;
+    bottom: $multiplier * $sizing-system-base-unit;
   }
 }

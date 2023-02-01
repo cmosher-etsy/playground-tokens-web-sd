@@ -7,15 +7,15 @@
   align-items: center;
 
   border-radius: $shape-button-border-radius-base;
-  padding: $space-system-100 $shape-button-border-radius-base;
+  padding: $sizing-system-base-unit $shape-button-border-radius-base;
 
   min-height: $shape-button-min-height-base;
 
-  font-family: $text-body-family;
-  font-size: $text-body-size;
-  font-weight: $text-body-weight;
-  letter-spacing: $text-body-letter-spacing;
-  line-height: $text-body-line-height;
+  font-family: $font-body-family;
+  font-size: $font-body-size;
+  font-weight: $font-body-weight;
+  letter-spacing: $font-body-letter-spacing;
+  line-height: $font-body-line-height;
 
   background-color: $color-surface-action-primary-bg;
   color: $color-surface-action-primary-fg;
